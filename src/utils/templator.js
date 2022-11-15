@@ -7,7 +7,7 @@ import Handlebars from "handlebars";
  * @param {Node} parent DOM-елемент в который скомпилируется hbs шаблон
  */
 
-export function templator(template, context, parent) {
+export function templator(template, context, parent, start = false) {
 	if (Array.isArray(context)) {
 		throw new Error('Аргумент не должен быть массивом. Вызовите для этого eachTemp')
 	}
@@ -16,6 +16,10 @@ export function templator(template, context, parent) {
 	const compileTemplate = Handlebars.compile(template.trim())(context);
 	fragment.innerHTML = compileTemplate;
 
+	if(start) {
+		parent.prepend(fragment.content);
+		return;
+	}
 
-	parent.append(fragment.content)
+	parent.append(fragment.content);
 }
