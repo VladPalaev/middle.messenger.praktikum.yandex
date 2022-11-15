@@ -1,0 +1,1 @@
+export const inputTemp = `<input class="{{ style }}" id="{{ idTag }}" type="{{  type  }}" name="{{  name  }}" placeholder="{{  placeholder  }}">`;
