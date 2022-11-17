@@ -1,0 +1,16 @@
+@import './modules/sidebar/components/search_chat/search_chat';
+@import './modules/sidebar/components/services/services';
+
+.chat__container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: minmax(300px, 2fr) 10fr;
+}
+.chat__sidebar {
+	
+}
+
+
+.chat__main {
+	background-color: rgba(0, 0, 255, 0.295);
+}

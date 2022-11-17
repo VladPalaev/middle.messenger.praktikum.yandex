@@ -9,6 +9,7 @@ const pathStaticDir = path.resolve(__dirname, 'dist');
 const PORT = process.env.PORT ?? 4200;
 
 app.use(express.static(pathStaticDir));
+app.use('/static', express.static(path.resolve(__dirname, 'static')))
 app.use(json())
 
 
