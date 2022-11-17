@@ -62,8 +62,7 @@
 	max-width: $max-width;
 	height: ($font-size * $line-height-em) * $heightString;
 	font-size: $font-size;
-	line-height: $line-height-em;
-	white-space: nowrap;
+	line-height: ($line-height-em) + em;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }

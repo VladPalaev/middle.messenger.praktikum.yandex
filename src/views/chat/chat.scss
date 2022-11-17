@@ -1,5 +1,10 @@
+
+// Компоненты sidebar-а
 @import './modules/sidebar/components/search_chat/search_chat';
 @import './modules/sidebar/components/services/services';
+@import './modules/sidebar/components/chat_info/chat_info';
+
+// Компоненты messanger-а
 
 .chat__container {
 	height: 100vh;
@@ -7,10 +12,26 @@
 	grid-template-columns: minmax(300px, 2fr) 10fr;
 }
 .chat__sidebar {
-	
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden; // Нужно ли это здесь?
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: $bg-light-blue;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #1f283c;
+		border-radius: 9em;
+		box-shadow: inset 1px 1px 10px #f3faf7;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: #0c0d10;
+	}
 }
 
 
 .chat__main {
-	background-color: rgba(0, 0, 255, 0.295);
+	background: url('../../../static/icons/bg_pattern.svg') center center/ cover no-repeat , linear-gradient(70deg, rgb(97, 97, 203), rgb(248, 167, 180));
 }

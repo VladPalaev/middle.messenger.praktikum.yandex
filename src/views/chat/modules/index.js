@@ -1,1 +1,1 @@
-export { searchChatTemp, servicesTemp } from './sidebar';
+export { searchChatTemp, servicesTemp, chatInfoTemp } from './sidebar';
