@@ -1,0 +1,63 @@
+@import '../../../../../../styles/vars';
+@import '../../../../../../styles/mixins';
+$offsetInputSearch: 30px;
+
+.search__container {
+	position: relative;
+	padding: 10px 0;
+	margin: 14px 10px;
+	border-radius: 5px;
+	background-color: $bg-grey;
+}
+
+.search-chat__field {
+	display: block;
+	width: 100%;
+	padding: 0 5px 0 $offsetInputSearch;
+
+	outline: none;
+	border: none;
+	background-color: transparent;
+
+	font-size: 13px;
+	font-weight: $fw-larger;
+	color: $fc-primary;
+}
+
+.search-chat__field:focus + label {
+	&::after {
+		opacity: 0;
+	}
+	left: 5px;
+	transform: translateX(0) translateY(-50%);
+}
+
+.search-chat__field:not(:placeholder-shown) + label {
+	&::after {
+		opacity: 0;
+	}
+	left: 5px;
+	transform: translateX(0) translateY(-50%);
+}
+
+.search-chat__label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+
+	display: flex;
+	align-items: center;
+
+	transition: 0.2s all linear;
+	pointer-events: none;
+}
+
+.search-chat__label::after {
+	content: 'Поиск';
+	font-size: 14px;
+	line-height: 1em;
+	color: $fc-secondary;
+	transition: 0.3s all linear;
+
+}
