@@ -1,4 +1,6 @@
 import Handlebars from "handlebars";
+// const Handlebars = require('handlebars');
+
 
 /**
  * Функция для генерации несколько однотипных hbs шаблонов для последующей вставки в DOM-дерево

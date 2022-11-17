@@ -3,12 +3,9 @@
 	"version": "1.0.0",
 	"description": "---",
 	"private": true,
-	"engines": {
-		"node": "~16.0.0"
-	},
 	"scripts": {
 		"start": "npm run clear && parcel ./src/views/**/*.hbs",
-		"build": "npm run clear && parcel build ./src/views/**/*.hbs --no-cache",
+		"build": "npm run clear && parcel build ./src/views/**/*.hbs --no-cache ",
 		"clear": "rimraf dist .parcel-cache"
 	},
 	"repository": {
@@ -31,6 +28,7 @@
 	"devDependencies": {
 		"@anikin/parcel-transformer-handlebars": "^1.0.9",
 		"@parcel/transformer-sass": "^2.8.0",
+		"nodemon": "^2.0.20",
 		"parcel": "^2.8.0"
 	}
 }

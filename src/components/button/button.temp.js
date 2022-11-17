@@ -3,4 +3,8 @@ export const buttonTemp = `<button class="{{ style }}"
 type="{{ type }}"
 {{else}}
 {{/if}}
+{{#if id}}
+id="{{ id }}"
+{{else}}
+{{/if}}
 >{{ label  }}</button>`

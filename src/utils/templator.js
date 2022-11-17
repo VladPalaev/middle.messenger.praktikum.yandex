@@ -1,5 +1,5 @@
 import Handlebars from "handlebars";
-
+// const Handlebars = require('handlebars');
 /**
  * Функция для генерация одного hbs компонента в DOM дерево.
  * @param {String} template hbs шаблон

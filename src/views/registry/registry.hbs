@@ -1,19 +1,19 @@
 ---
-linkCss: ['../styles/common.scss', './login.scss']
-linkJs: ['./login.js']
+linkCss: ['../../styles/common.scss', '../login.scss', './registry.scss']
+linkJs: ['./registry.js']
 ---
 
 <!DOCTYPE html>
 <html lang="ru">
-{{> header titlePage='Авторизация' pathFileCss=linkCss pathFileJs=linkJs }}
+{{> header titlePage='Регистрация' pathFileCss=linkCss pathFileJs=linkJs }}
 <body>
-	
+
 <div id="root">
-	
+
 	<main class="main fx-c-c">
 		<div class="auth-container fx-col">
 
-			<h2 class="auth-header">Вход</h2>
+			<h2 class="auth-header">Регистрация</h2>
 
 			<form action="#" id="form-auth" class="auth-form fx-col fx-space">
 				<div class="auth-field__list" id="auth-field__list">
@@ -22,7 +22,7 @@ linkJs: ['./login.js']
 
 				<div class="auth-btn__container fx-col" id="auth-btn__container">
 					
-					<a href="#" id="btnRegistry" class="btn-registry btn">Нет аккаунта?</a>
+					<a href="../index.hbs" id="btnRegistry" class="btn-registry btn">Войти</a>
 				
 				</div>
 			</form>
