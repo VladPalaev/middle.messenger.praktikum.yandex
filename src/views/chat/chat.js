@@ -14,7 +14,7 @@ const listImageServices = [
 	{ pathImg: '/static/icons/chat_services_contacts.png', altImg: 'Контакты', linkHref: '#' },
 	{ pathImg: '/static/icons/chat_services_call.png', altImg: 'Позвонить', linkHref: '#' },
 	{ pathImg: '/static/icons/chat_services_messages.png', altImg: 'Сообщения', linkHref: '#' },
-	{ pathImg: '/static/icons/chat_services_setting.png', altImg: 'Настройки', linkHref: '/profile/profile.index.html' },
+	{ pathImg: '/static/icons/chat_services_setting.png', altImg: 'Настройки', linkHref: '/profile/profile.html' },
 ];
 
 const listInfoChats = [
