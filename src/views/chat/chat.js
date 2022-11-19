@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				templator(inputSendMsgTemp, null, chatMainContainer);
 			}
 
-	
+
 		});
 	});
 

@@ -2,6 +2,7 @@
 
 
 .main {
+	position: relative;
 	height: 100vh;
 }
 
@@ -42,4 +43,19 @@
 }
 
 .field-password {
+}
+
+.modal-pages {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 300px;
+}
+.modal-pages__nav {
+}
+.modal-pages__list {
+}
+.modal-pages__item {
+}
+.modal-pages__link {
 }
