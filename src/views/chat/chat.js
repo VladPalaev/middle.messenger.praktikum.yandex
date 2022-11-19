@@ -3,20 +3,21 @@ import {
 	searchChatTemp, servicesTemp, chatInfoTemp, chatSettingTemp,
 	inputSendMsgTemp, historyMessagesTemp,
 } from './modules';
-
+import images1 from "../../../static/icons/chat_services_contacts.png";
+import images2 from "../../../static/icons/chat_services_call.png";
+import images3 from "../../../static/icons/chat_services_messages.png";
+import images4 from "../../../static/icons/chat_services_setting.png";
 
 const searchContainer = document.querySelector('.search__container');
 const servicesContainer = document.querySelector('.services__container');
 const listChatContainer = document.querySelector('.chat__list');
 
-
 const listImageServices = [
-	{ pathImg: '/static/icons/chat_services_contacts.png', altImg: 'Контакты', linkHref: '#' },
-	{ pathImg: '/static/icons/chat_services_call.png', altImg: 'Позвонить', linkHref: '#' },
-	{ pathImg: '/static/icons/chat_services_messages.png', altImg: 'Сообщения', linkHref: '#' },
-	{ pathImg: '/static/icons/chat_services_setting.png', altImg: 'Настройки', linkHref: '/profile/profile.html' },
+	{ pathImg: images1, altImg: 'Контакты', linkHref: '#' },
+	{ pathImg: images2, altImg: 'Позвонить', linkHref: '#' },
+	{ pathImg: images3, altImg: 'Сообщения', linkHref: '#' },
+	{ pathImg: images4, altImg: 'Настройки', linkHref: '/profile/profile.html' },
 ];
-
 const listInfoChats = [
 	{ userName: 'Влад', lastMessage: 'Друзья, у меня для вас особенный выпуск новостей! Привет Влад!', timeMessage: '12:32', countMessages: '4' },
 	{ userName: 'Ася', lastMessage: 'Займи деньги до завтра', timeMessage: '12:32', countMessages: '4' },
@@ -54,7 +55,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		});
 	});
-
 
 
 });

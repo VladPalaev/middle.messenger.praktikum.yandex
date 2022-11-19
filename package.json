@@ -4,7 +4,7 @@
 	"description": "---",
 	"private": true,
 	"scripts": {
-		"start": "npm run clear && parcel ./src/views/**/*.hbs",
+		"start": "npm run clear && parcel ./src/views/**/*.hbs ",
 		"build": "npm run clear && parcel build ./src/views/**/*.hbs --no-cache",
 		"clear": "rimraf dist .parcel-cache"
 	},
