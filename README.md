@@ -1,5 +1,7 @@
 # Самостоятельный проект "Messanger"
 
+## Deploy
+https://genuine-scone-4d2618.netlify.app/ Netlify
 
 ## Команды npm
 1. npm run build - сборка продакшн версии;
