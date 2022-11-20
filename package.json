@@ -1,0 +1,34 @@
+{
+	"name": "middle.messenger.praktikum.yandex",
+	"version": "1.0.0",
+	"description": "---",
+	"private": true,
+	"scripts": {
+		"start": "npm run clear && parcel ./src/views/**/*.hbs ",
+		"build": "npm run clear && parcel build ./src/views/**/*.hbs --no-cache",
+		"clear": "rimraf dist .parcel-cache"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/VladPalaev/middle.messenger.praktikum.yandex.git"
+	},
+	"keywords": [],
+	"author": "Vladislav Palaev /<vladislav.palaev@yandex.ru/>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/VladPalaev/middle.messenger.praktikum.yandex/issues"
+	},
+	"homepage": "https://github.com/VladPalaev/middle.messenger.praktikum.yandex#readme",
+	"dependencies": {
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"handlebars": "4.7.7",
+		"rimraf": "3.0.2"
+	},
+	"devDependencies": {
+		"@anikin/parcel-transformer-handlebars": "1.0.9",
+		"@parcel/transformer-sass": "2.8.0",
+		"nodemon": "2.0.20",
+		"parcel": "2.8.0"
+	}
+}

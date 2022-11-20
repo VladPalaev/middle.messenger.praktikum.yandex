@@ -1,0 +1,14 @@
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ titlePage }}</title>
+	{{#each pathFileCss}}
+	<link rel="stylesheet" href="{{  this  }}">
+	{{else}}
+	{{/each}}
+	{{#if pathFileJs}}
+	<script src="{{  pathFileJs  }}" type="module"  defer="true"></script>
+	{{^}}
+	{{/if}}
+</head>

@@ -1,0 +1,41 @@
+// Обнуляторы, переменные, утилиты
+@import 'normalize';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+@import 'utils';
+
+
+// Стили компонентов
+@import '../components/button/buttons';
+@import '../components/input/input';
+
+
+// Базовые стили
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $ff-primary;
+	font-weight: $fw-primay;
+	color: $fc-primary;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}

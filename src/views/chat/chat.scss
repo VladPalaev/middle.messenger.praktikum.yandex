@@ -1,0 +1,57 @@
+
+// Компоненты sidebar-а
+@import './modules/sidebar/components/search_chat/search_chat';
+@import './modules/sidebar/components/services/services';
+@import './modules/sidebar/components/chat_info/chat_info';
+
+// Компоненты messanger-а
+@import './modules/messanger/components/chat_setting/chat_setting';
+@import './modules/messanger/components/history_msg/history_msg';
+@import './modules/messanger/components/input_send_msg/inputSendMsg';
+
+.chat__container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: minmax(300px, 2fr) 10fr;
+}
+.chat__sidebar {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden; // Нужно ли это здесь?
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: $bg-light-blue;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #1f283c;
+		border-radius: 9em;
+		box-shadow: inset 1px 1px 10px #f3faf7;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: #0c0d10;
+	}
+}
+
+
+.chat__main {
+	background: linear-gradient(70deg, rgba(248, 167, 181, 0.447), rgba(108, 108, 203, 0.408));
+}
+
+.chat-plug {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: none;
+}
+
+.chat-plug__text {
+	color: $fc-secondary;
+	font-size: 12px;
+}
+
+.chat-active {
+	display: flex;
+	flex-direction: column;
+}

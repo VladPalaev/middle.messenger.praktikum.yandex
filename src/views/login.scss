@@ -1,0 +1,61 @@
+@import '../styles/vars';
+
+
+.main {
+	position: relative;
+	height: 100vh;
+}
+
+.auth-container {
+	max-width: 340px;
+	width: 100%;
+	min-height: 450px;
+
+	padding: 50px 30px 30px;
+
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+	border-radius: 12px;
+}
+
+.auth-header {
+	margin-bottom: 40px;
+
+	text-align: center;
+	font-size: 20px;
+	line-height: 1em;
+}
+
+.auth-form {
+	flex: 1;
+}
+
+.auth-field__list {
+
+}
+
+.auth-btn__container {
+}
+
+.auth-form__field {
+}
+
+.field-login {
+}
+
+.field-password {
+}
+
+.modal-pages {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 300px;
+}
+.modal-pages__nav {
+}
+.modal-pages__list {
+}
+.modal-pages__item {
+}
+.modal-pages__link {
+}
