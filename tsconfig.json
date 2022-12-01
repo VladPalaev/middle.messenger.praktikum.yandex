@@ -1,35 +1,33 @@
 {
+  "include": [ "./src/**/*" ],
+  "exclude": [ "dist", "node_modules" ],
   "compilerOptions": {
-    "target": "es2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "outDir": "dist",
     "allowJs": true,
-    "skipLibCheck": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "composite": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "sourceMap": true,
-    "baseUrl": "./",
+    "importHelpers": true,
+    "incremental": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictNullChecks": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist/**/*"
-  ]
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2020",
+    // "allowSyntheticDefaultImports": true, // включить импорт по умолчанию из библиотек у которых его нет
+    // "declaration": true, создавать файлы d.ts
+    // "declarationMap": true,
+
+  }
 }
