@@ -13,7 +13,7 @@
     "incremental": true,
     "module": "CommonJS",
     "moduleResolution": "Node",
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

@@ -35,6 +35,22 @@
         "ignoreTemplateLiterals": true,
         "ignorePattern": "\\s<\\w+>.*<\\/\\w+>$"
       }
-    ]
+    ],
+    "import/extensions": [ // Конфлиг с airbnb
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "lines-between-class-members": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "no-param-reassign": ["error", {"props": false}],
+    "react/no-unused-prop-types": 0,
+    "react/require-default-props": 0
   }
 }
