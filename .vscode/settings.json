@@ -1,5 +1,20 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnPaste": true,
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnPaste": true,
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnPaste": true,
+  },
 }
