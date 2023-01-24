@@ -1,0 +1,23 @@
+.profile-setting__container {
+	display: flex;
+	flex-direction: column;
+
+	& :last-child {
+		border-bottom: none;
+	}
+}
+
+.profile-setting__btn-box {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.profile-setting__btn {
+	padding: 0;
+	color: $color-primary;
+	font-size: 13px;
+}
+
+.btn-logout {
+	color: $color-red;
+}

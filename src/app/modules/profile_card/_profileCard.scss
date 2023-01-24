@@ -1,0 +1,11 @@
+@import "./components/avatar/avatarProfile";
+@import "./components/setting_card/settingCard";
+@import "./components/profile-info/profileInfo";
+@import "./components/field/fieldLock";
+
+.profile {
+	width: 100%;
+	max-width: 510px;
+	margin: auto;
+	background-color: $fc-white;
+}

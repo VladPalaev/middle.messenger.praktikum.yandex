@@ -1,0 +1,10 @@
+.profile-main {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: min-content 1fr;
+}
+
+.back-chats {
+	padding: 0 18px;
+	background-color: $bg-grey;
+}
