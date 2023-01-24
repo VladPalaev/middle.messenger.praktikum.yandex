@@ -1,0 +1,64 @@
+$offsetInputSearch: 30px;
+
+.search__container {
+	position: relative;
+	padding: 10px 0;
+	border-radius: 5px;
+	margin: 0 10px 15px;
+	background-color: $bg-grey;
+}
+
+.search-chat__field {
+	display: block;
+	width: 100%;
+	padding: 0 5px 0 $offsetInputSearch;
+	border: none;
+	background-color: transparent;
+	color: $fc-primary;
+	font-size: 13px;
+	font-weight: $fw-larger;
+	outline: none;
+}
+
+.search-chat__field:focus + label {
+	&::after {
+		opacity: 0;
+	}
+
+	left: 5px;
+	transform: translateX(0) translateY(-50%);
+}
+
+.search-chat__field:not(:placeholder-shown) + label {
+	&::after {
+		opacity: 0;
+	}
+
+	left: 5px;
+	transform: translateX(0) translateY(-50%);
+}
+
+.search-chat__label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	pointer-events: none;
+	transform: translateX(-50%) translateY(-50%);
+	transition: 0.2s all linear;
+}
+
+.search-chat__label::after {
+	color: $fc-secondary;
+	content: "Поиск";
+	font-size: 14px;
+	line-height: 1em;
+	transition: 0.3s all linear;
+}
+
+.search-chat__img {
+	width: 18px;
+	height: 18px;
+}

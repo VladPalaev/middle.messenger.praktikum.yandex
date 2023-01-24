@@ -1,0 +1,22 @@
+import React from "mine-react";
+import { AppFeatures } from "./components/application_features/AppFeatures";
+import { ChatInfo } from "./components/chat_info/ChatInfo";
+import { SearchChat } from "./components/search_chat/Search_chat";
+
+export const Sidebar = () => {
+	return (
+		<aside className="chat__sidebar">
+			<AppFeatures />
+			<SearchChat />
+			<ul className="chat__list">
+				<ChatInfo
+					countMessages="4"
+					avatarUrl="#"
+					lastMessage="Hello "
+					timeMessage="3:32"
+					userName="Vlad"
+				/>
+			</ul>
+		</aside>
+	);
+};
