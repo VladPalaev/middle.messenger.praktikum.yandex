@@ -1,0 +1,46 @@
+.auth-field__container {
+	position: relative;
+	padding: 7px 0;
+	border-bottom: 1px solid $color-primary;
+	margin-bottom: 15px;
+}
+
+.auth-form__field {
+	width: 100%;
+	padding: 0;
+	border: none;
+	font-size: 13px;
+	line-height: 1em;
+	outline: none;
+}
+
+.auth-field__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $fc-secondary;
+	font-size: 13px;
+	line-height: 1em;
+	pointer-events: none;
+	transform: translateY(80%);
+	transition: all 0.3s ease;
+}
+
+.auth-form__field:focus + .auth-field__label {
+	font-size: 9px;
+	transform: translateY(0%);
+}
+
+.auth-form__field:not(:placeholder-shown) + .auth-field__label {
+	font-size: 9px;
+	transform: translateY(0%);
+}
+
+.auth-field__error {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	color: $color-red;
+	font-size: 8px;
+	line-height: 1em;
+}

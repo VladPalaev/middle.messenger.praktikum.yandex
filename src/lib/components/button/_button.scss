@@ -1,0 +1,45 @@
+@use "sass:color";
+
+.btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-login {
+	padding: 12px;
+	border-radius: 8px;
+	margin-bottom: 5px;
+	background-color: $color-primary;
+	color: $fc-white;
+	font-size: 13px;
+	line-height: 1em;
+	transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+	background-color: color.scale($color: $color-primary, $lightness: -20%);
+}
+
+.btn-registry {
+	padding: 12px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	color: $color-primary;
+	font-size: 11px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.btn-registry:hover {
+	border: 1px solid $color-primary;
+	border-radius: 8px;
+}
+
+.btn-back {
+	display: block;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+}
