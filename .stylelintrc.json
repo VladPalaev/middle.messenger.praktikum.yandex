@@ -8,6 +8,7 @@
     "stylelint-declaration-block-no-ignored-properties"
   ],
   "rules": {
-    "plugin/declaration-block-no-ignored-properties": true
+    "plugin/declaration-block-no-ignored-properties": true,
+    "selector-class-pattern": null
   }
 }
