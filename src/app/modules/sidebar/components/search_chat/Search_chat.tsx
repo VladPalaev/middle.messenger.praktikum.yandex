@@ -6,13 +6,18 @@ export const SearchChat = () => {
 	return (
 		<div className="search__container">
 			<InputText
+				name="searchChat"
 				type="text"
 				className="search-chat__field"
 				id="search-chat__field"
 				placeholder=" "
 			/>
 			<label className="search-chat__label" for="search-chat__field">
-				<img className="search-chat__img" src={icon} alt="" />
+				<img
+					className="search-chat__img"
+					src={icon}
+					alt="Лупа поиска"
+				/>
 			</label>
 		</div>
 	);

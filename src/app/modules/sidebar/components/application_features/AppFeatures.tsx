@@ -9,22 +9,22 @@ export const AppFeatures = () => {
 		<ul className="services__container fx">
 			<li class="services__item">
 				<a href="#" class="services__link">
-					<img class="services__img" src={contacts} alt="" />
+					<img class="services__img" src={contacts} alt="Контакты" />
 				</a>
 			</li>
 			<li class="services__item">
 				<a href="#" class="services__link">
-					<img class="services__img" src={call} alt="" />
+					<img class="services__img" src={call} alt="Позвонить" />
 				</a>
 			</li>
 			<li class="services__item">
 				<a href="#" class="services__link">
-					<img class="services__img" src={messages} alt="" />
+					<img class="services__img" src={messages} alt="Чаты" />
 				</a>
 			</li>
 			<li class="services__item">
 				<a href="#" class="services__link">
-					<img class="services__img" src={settings} alt="" />
+					<img class="services__img" src={settings} alt="Настройки" />
 				</a>
 			</li>
 		</ul>

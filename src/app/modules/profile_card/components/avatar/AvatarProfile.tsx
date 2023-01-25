@@ -8,7 +8,11 @@ export const AvatarProfile = ({ url }: IAvatarProfile) => {
 	return (
 		<div className="profile-avatar__container">
 			<div className="profile-avatar">
-				<img src={url} className="profile-avatar__img"></img>
+				<img
+					src={url}
+					alt="Аватарка"
+					className="profile-avatar__img"
+				></img>
 			</div>
 		</div>
 	);

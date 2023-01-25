@@ -17,7 +17,7 @@ export const InputSendMsg = (props) => {
 	return (
 		<div className="chat-input__container">
 			<button className="chat-input__attach btn" type="button">
-				<img src={imgAttachFile} alt="" />
+				<img src={imgAttachFile} alt="Прикрепить файлы" />
 			</button>
 			<InputText
 				type="text"
@@ -33,7 +33,7 @@ export const InputSendMsg = (props) => {
 				className="chat-input__send-message btn"
 				type="button"
 			>
-				<img src={imgSendMsg} alt="" />
+				<img src={imgSendMsg} alt="Отправить сообщение" />
 			</button>
 		</div>
 	);

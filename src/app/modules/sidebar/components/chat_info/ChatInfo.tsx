@@ -18,7 +18,7 @@ export const ChatInfo = ({
 	return (
 		<li className="chat-info chat__item">
 			<div className="chat-info__avatar">
-				<img src={avatarUrl} alt="" />
+				<img src={avatarUrl} alt="Аватар пользователя" />
 			</div>
 			<div className="chat-info__description">
 				<div className="chat-info__user-name">{userName}</div>
