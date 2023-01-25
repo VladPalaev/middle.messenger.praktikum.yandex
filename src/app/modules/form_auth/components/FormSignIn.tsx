@@ -24,8 +24,16 @@ export const FormSignIn = () => {
 			</div>
 
 			<div className="auth-btn-container fx-col">
-				<Button className="btn btn-login" label="Авторизоваться" />
-				<Button className="btn btn-registry" label="Нет аккаунта?" />
+				<Button
+					type="submit"
+					className="btn btn-login"
+					label="Авторизоваться"
+				/>
+				<Button
+					type="button"
+					className="btn btn-registry"
+					label="Нет аккаунта?"
+				/>
 			</div>
 		</>
 	);

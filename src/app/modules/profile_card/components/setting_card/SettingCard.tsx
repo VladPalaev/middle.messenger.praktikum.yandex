@@ -6,18 +6,21 @@ export const SettingCard = () => {
 		<div className="profile-setting__container">
 			<div className="profile-setting__btn-box">
 				<Button
+					type="button"
 					className="profile-setting__btn btn"
 					label="Изменить данные"
 				/>
 			</div>
 			<div className="profile-setting__btn-box">
 				<Button
+					type="button"
 					className="profile-setting__btn btn"
 					label="Изменить пароль"
 				/>
 			</div>
 			<div className="profile-setting__btn-box">
 				<Button
+					type="button"
 					className="profile-setting__btn btn btn-logout"
 					label="Выйти"
 				/>

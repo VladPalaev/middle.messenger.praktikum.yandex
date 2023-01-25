@@ -112,9 +112,17 @@ export const FormSignUp = () => {
 			</div>
 
 			<div className="auth-btn-container fx-col">
-				<Button className="btn btn-login" label="Зарегистрироваться" />
+				<Button
+					type="button"
+					className="btn btn-login"
+					label="Зарегистрироваться"
+				/>
 
-				<Button className="btn btn-registry" label="Войти" />
+				<Button
+					type="submit"
+					className="btn btn-registry"
+					label="Войти"
+				/>
 			</div>
 		</>
 	);

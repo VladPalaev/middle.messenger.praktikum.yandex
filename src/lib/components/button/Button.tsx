@@ -1,6 +1,7 @@
 import React from "mine-react";
 
 interface IButton {
+	type: "button" | "submit" | "reset" | "menu";
 	className: string;
 	label: string;
 	id?: string;
@@ -10,6 +11,7 @@ interface IButton {
 export const Button = (props: IButton) => {
 	return (
 		<button
+			type={props.type}
 			id={props.id}
 			onClick={props.onClick}
 			className={props.className}

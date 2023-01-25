@@ -7,7 +7,7 @@ export const ProfilePage = () => {
 	return (
 		<main className="profile-main">
 			<div className="back-chats fx fx-c-c">
-				<ButtonBack url={urlBtnBack} />
+				<ButtonBack type="button" url={urlBtnBack} />
 			</div>
 			<ProfileCard />
 		</main>
