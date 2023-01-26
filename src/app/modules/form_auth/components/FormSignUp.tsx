@@ -113,13 +113,13 @@ export const FormSignUp = () => {
 
 			<div className="auth-btn-container fx-col">
 				<Button
-					type="button"
+					type="submit"
 					className="btn btn-login"
 					label="Зарегистрироваться"
 				/>
 
 				<Button
-					type="submit"
+					type="button"
 					className="btn btn-registry"
 					label="Войти"
 				/>
