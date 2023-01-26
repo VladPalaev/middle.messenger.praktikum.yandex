@@ -1,11 +1,12 @@
 import React from "mine-react";
 import { Button } from "../../../../../lib/components";
 
-export const SettingCard = () => {
+export const SettingCard = (props) => {
 	return (
 		<div className="profile-setting__container">
 			<div className="profile-setting__btn-box">
 				<Button
+					onClick={props.handleEditProfile}
 					type="button"
 					className="profile-setting__btn btn"
 					label="Изменить данные"
