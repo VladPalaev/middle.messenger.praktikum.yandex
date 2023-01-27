@@ -9,7 +9,7 @@ export const ProfileCard = () => {
 		login: "vladPalev",
 		first_name: "Влад",
 		second_name: "Палаев",
-		nick_name: "vladYandex",
+		display_name: "vladYandex",
 		phone: "+79275900001",
 	};
 	const [flag, setFlag] = React.useState(false);
