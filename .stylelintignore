@@ -1,0 +1,10 @@
+/bin
+/node_modules
+/dist
+/coverage
+
+**.*
+!*.css
+!*.scss
+_mixins.scss
+_normalize.scss

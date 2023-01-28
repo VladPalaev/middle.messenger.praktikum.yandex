@@ -1,0 +1,52 @@
+// Обнуляторы, переменные, утилиты
+@import "normalize";
+@import "vars";
+@import "fonts";
+@import "mixins";
+@import "utils";
+
+// Стили components
+@import "../../lib/components/index";
+
+// Стили modules
+@import "../modules/index";
+
+// Стили pages
+@import "../pages/auth/auth";
+@import "../pages/chat/chatPage";
+@import "../pages/profile/profilePage";
+@import "../pages/error/errorPage";
+
+// Базовые стили
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	color: $fc-primary;
+	font-family: $ff-primary;
+	font-weight: $fw-primay;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}

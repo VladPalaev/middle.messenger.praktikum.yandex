@@ -1,0 +1,1 @@
+export { getHHMM } from "./getHHMM";

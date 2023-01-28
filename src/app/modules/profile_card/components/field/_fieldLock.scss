@@ -1,0 +1,21 @@
+.profile-info__container {
+	padding: 10px 0;
+	border-bottom: 1px solid $bg-grey;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.profile-info__template {
+	color: $fc-primary;
+	font-size: 13px;
+	font-weight: $fw-larger;
+	line-height: 1em;
+}
+
+.profile-info__user-value {
+	color: $fc-secondary;
+	font-size: 13px;
+	line-height: 1em;
+}

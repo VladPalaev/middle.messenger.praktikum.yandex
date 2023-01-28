@@ -1,0 +1,13 @@
+.history-messages {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.history-messages__container {
+	display: flex;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	gap: 5px;
+}

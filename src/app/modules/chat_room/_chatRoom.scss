@@ -1,0 +1,12 @@
+@import "./components/chat_setting/chatSetting";
+@import "./components/input_send_msg/inputSendMsg";
+@import "./components/history_messages/historyMessages";
+@import "./components/message/message";
+
+.chat__main {
+	background: linear-gradient(
+		70deg,
+		rgb(248 167 181 / 44.7%),
+		rgb(108 108 203 / 40.8%)
+	);
+}

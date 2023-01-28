@@ -1,0 +1,4 @@
+{
+  "*.{ts,js}": "eslint --config ./eslintrc.json --fix",
+  "*.{css,scss}": "stylelint --config ./stylelintrc.json --fix"
+}

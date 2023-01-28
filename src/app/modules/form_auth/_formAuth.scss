@@ -1,0 +1,23 @@
+.auth-container {
+	width: 100%;
+	max-width: 340px;
+	min-height: 450px;
+	padding: 50px 30px 30px;
+	border-radius: 12px;
+	box-shadow: 0 0 6px rgb(0 0 0 / 14%);
+}
+
+.auth-header {
+	margin-bottom: 40px;
+	font-size: 20px;
+	line-height: 1em;
+	text-align: center;
+}
+
+.auth-fields {
+	margin-bottom: 45px;
+}
+
+.auth-btn-container {
+	margin-top: auto;
+}

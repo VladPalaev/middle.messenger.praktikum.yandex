@@ -1,0 +1,16 @@
+.profile-info__user-value-edit {
+	height: 1em;
+	padding: 0;
+	border: none;
+	color: $fc-primary;
+	outline: none;
+	text-align: end;
+
+	&::placeholder {
+		color: $fc-primary;
+	}
+}
+
+.field--error {
+	border: 1px solid red;
+}

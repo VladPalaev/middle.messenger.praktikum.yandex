@@ -1,0 +1,31 @@
+.chat-input__container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	gap: 10px;
+}
+
+.chat-input__attach {
+	width: 28px;
+	height: 28px;
+	padding: 0;
+}
+
+.chat-input__field {
+	flex: 1;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+	background-color: $bg-grey;
+	color: $fc-primary;
+	font-size: 12px;
+	line-height: 1em;
+	outline: none;
+}
+
+.chat-input__send-message {
+	width: 28px;
+	height: 28px;
+	padding: 0;
+}

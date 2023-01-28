@@ -1,0 +1,8 @@
+// Folder
+dist/
+node_modules/
+coverage/
+
+// Files
+server.js
+**/*.min.js
