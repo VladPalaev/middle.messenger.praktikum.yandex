@@ -1,28 +1,30 @@
 import { queryStringify } from "./utils/queryStringify";
+import { BaseApi } from "./baseApi";
 
-type Options = {
+type Options<T> = {
 	method: keyof typeof HTTP.MEDHOD;
 	headers?: Record<string, string>;
-	data?: Record<string, unknown>;
+	data?: T;
 	timeout?: number;
 };
 
-export class HTTP {
+class HTTP {
 	public static MEDHOD = {
 		GET: "GET",
 		POST: "POST",
 		PUT: "PUT",
 		DELETE: "DELETE",
 	} as const;
-	private baseUrl: string;
+	private readonly apiURL = "https://ya-praktikum.tech/api/v2";
+	private endpoint: string;
 
-	public constructor(baseUrl: string, endpoint = "") {
-		this.baseUrl = `${baseUrl}${endpoint}`;
+	public constructor(endpoint = "") {
+		this.endpoint = `${this.apiURL}${endpoint}`;
 	}
 
-	private _request<Response>(
+	private _request<Request, Response>(
 		url: string,
-		options: Options
+		options: Options<Request>
 	): Promise<Response> {
 		const { method, headers, data, timeout = 5000 } = options;
 
@@ -79,9 +81,9 @@ export class HTTP {
 
 	public get<Response>(
 		url: string,
-		options: Omit<Options, "method"> = {}
+		options: Omit<Options<null>, "method"> = {}
 	): Promise<Response> {
-		let fullUrl = this.baseUrl + url;
+		let fullUrl = this.endpoint + url;
 
 		if (options.data) {
 			fullUrl += queryStringify(options.data);
@@ -90,33 +92,35 @@ export class HTTP {
 		return this._request(fullUrl, { ...options, method: HTTP.MEDHOD.GET });
 	}
 
-	public post<Response>(
+	public post<Request, Response>(
 		url: string,
-		options: Omit<Options, "method"> = {}
+		options: Omit<Options<Request>, "method"> = {}
 	): Promise<Response> {
-		return this._request(this.baseUrl + url, {
+		return this._request<Request, Response>(`${this.endpoint}${url}`, {
 			...options,
 			method: HTTP.MEDHOD.POST,
 		});
 	}
 
-	public put<Response>(
+	public put<Request, Response>(
 		url: string,
-		options: Omit<Options, "method"> = {}
+		options: Omit<Options<Request>, "method"> = {}
 	): Promise<Response> {
-		return this._request<Response>(this.baseUrl + url, {
+		return this._request(this.endpoint + url, {
 			...options,
 			method: HTTP.MEDHOD.PUT,
 		});
 	}
 
-	public delete<Response>(
+	public delete<Request, Response>(
 		url: string,
-		options: Omit<Options, "method"> = {}
+		options: Omit<Options<Request>, "method"> = {}
 	): Promise<Response> {
-		return this._request<Response>(this.baseUrl + url, {
+		return this._request(this.endpoint + url, {
 			...options,
 			method: HTTP.MEDHOD.DELETE,
 		});
 	}
 }
+
+export { HTTP, BaseApi };

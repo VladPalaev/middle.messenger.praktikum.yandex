@@ -1,5 +1,6 @@
 import React from "mine-react";
 import { Avatar } from "../../../../../lib/components";
+import { mapMessages } from "../../mappers";
 import { IMessage, Message } from "../message/Message";
 
 interface IHistoryMessages {

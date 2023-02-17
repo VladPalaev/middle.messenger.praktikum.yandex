@@ -1,7 +1,12 @@
 import React from "mine-react";
 import { Button } from "../../../../../lib/components";
+import { logOut } from "../../models/logOut";
 
 export const SettingCard = (props) => {
+	const handleLogOutSystem = async () => {
+		await logOut();
+	};
+
 	return (
 		<div className="profile-setting__container">
 			<div className="profile-setting__btn-box">
@@ -24,6 +29,7 @@ export const SettingCard = (props) => {
 					type="button"
 					className="profile-setting__btn btn btn-logout"
 					label="Выйти"
+					onClick={handleLogOutSystem}
 				/>
 			</div>
 		</div>

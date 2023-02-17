@@ -2,8 +2,10 @@
 @import "./components/input_send_msg/inputSendMsg";
 @import "./components/history_messages/historyMessages";
 @import "./components/message/message";
+@import "./components/stub_chat/stubChat";
 
 .chat__main {
+	overflow: hidden;
 	background: linear-gradient(
 		70deg,
 		rgb(248 167 181 / 44.7%),

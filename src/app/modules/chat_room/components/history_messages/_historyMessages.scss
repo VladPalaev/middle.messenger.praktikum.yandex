@@ -1,8 +1,8 @@
 .history-messages {
 	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: flex-end;
+	flex-direction: column-reverse;
+	flex-grow: 1;
+	overflow-y: auto;
 }
 
 .history-messages__container {

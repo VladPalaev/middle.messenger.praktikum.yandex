@@ -8,9 +8,9 @@ export const InputSendMsg = (props) => {
 	const [message, setMessage] = React.useState("");
 
 	const handleSendMessage = () => {
-		const { valid, errors } = validateInputSendMsg("message", message);
+		const { valid } = validateInputSendMsg("message", message);
 		if (valid) {
-			props.updateMessages({ text: message });
+			props.updateMessages(message);
 		}
 		setMessage("");
 	};

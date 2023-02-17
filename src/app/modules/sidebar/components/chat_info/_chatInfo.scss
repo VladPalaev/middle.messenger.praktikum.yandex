@@ -6,6 +6,7 @@
 
 	&::before {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		right: 10px;
 		left: 10px;
@@ -23,6 +24,7 @@
 .chat-info:last-child {
 	&::after {
 		position: absolute;
+		z-index: 1;
 		right: 10px;
 		bottom: 0;
 		left: 10px;

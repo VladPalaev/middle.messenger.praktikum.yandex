@@ -5,7 +5,7 @@ interface IButton {
 	className: string;
 	label: string;
 	id?: string;
-	onClick?: (e: Event) => void;
+	onClick?: (e: any) => any;
 }
 
 export const Button = (props: IButton) => {

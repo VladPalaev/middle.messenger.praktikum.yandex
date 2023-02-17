@@ -1,9 +1,28 @@
 import React from "mine-react";
 import { Button, InputInteractiveHint } from "../../../../lib/components";
+import { Link } from "../../../../lib/core/Router";
+import { signIn } from "../models/signIn";
 
 export const FormSignIn = () => {
+	const [login, setLogin] = React.useState("");
+	const [password, setPassword] = React.useState("");
+
+	const handleUpdateValue = (setterField) => {
+		return (e: Event) => {
+			setterField(e.target.value);
+		};
+	};
+
+	const handleLoginSubmit = async (e: Event) => {
+		e.preventDefault();
+
+		const data = new FormData(e.target);
+		const [login, password] = data.values();
+		const response = await signIn({ login, password }); //todo можно удалить response
+	};
+
 	return (
-		<>
+		<form className="auth-container fx-col" onSubmit={handleLoginSubmit}>
 			<h1 className="auth-header">Вход</h1>
 
 			<div className="auth-fields">
@@ -13,6 +32,8 @@ export const FormSignIn = () => {
 					placeholder=" "
 					type="text"
 					id="login"
+					onInput={handleUpdateValue(setLogin)}
+					value={login}
 				/>
 				<InputInteractiveHint
 					label="Пароль"
@@ -20,6 +41,8 @@ export const FormSignIn = () => {
 					placeholder=" "
 					type="password"
 					id="password"
+					onInput={handleUpdateValue(setPassword)}
+					value={password}
 				/>
 			</div>
 
@@ -29,12 +52,10 @@ export const FormSignIn = () => {
 					className="btn btn-login"
 					label="Авторизоваться"
 				/>
-				<Button
-					type="button"
-					className="btn btn-registry"
-					label="Нет аккаунта?"
-				/>
+				<Link to="/sign-up" className="btn btn-registry">
+					Нет аккаунта?
+				</Link>
 			</div>
-		</>
+		</form>
 	);
 };

@@ -1,22 +1,16 @@
 import React from "mine-react";
-
-interface IChatInfo {
-	avatarUrl: string;
-	userName: string;
-	lastMessage: string;
-	timeMessage: string;
-	countMessages: string;
-}
+import { TChatInfo } from "../../types";
 
 export const ChatInfo = ({
+	onClick,
 	avatarUrl,
 	userName,
 	lastMessage,
 	countMessages,
 	timeMessage,
-}: IChatInfo) => {
+}: TChatInfo) => {
 	return (
-		<li className="chat-info chat__item">
+		<li className="chat-info chat__item" onClick={onClick}>
 			<div className="chat-info__avatar">
 				<img src={avatarUrl} alt="Аватар пользователя" />
 			</div>
@@ -31,9 +25,11 @@ export const ChatInfo = ({
 				>
 					{timeMessage}
 				</time>
-				<span className="chat-info__count-message fx fx-c-c">
-					{countMessages}
-				</span>
+				{Number(countMessages) ? (
+					<span className="chat-info__count-message fx fx-c-c">
+						{countMessages}
+					</span>
+				) : null}
 			</div>
 		</li>
 	);

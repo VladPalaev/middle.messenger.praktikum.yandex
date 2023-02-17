@@ -3,6 +3,7 @@ import call from "../../../../../../static/icons/chat_services_call.png";
 import contacts from "../../../../../../static/icons/chat_services_contacts.png";
 import messages from "../../../../../../static/icons/chat_services_messages.png";
 import settings from "../../../../../../static/icons/chat_services_setting.png";
+import { Link } from "../../../../../lib/core/Router";
 
 export const AppFeatures = () => {
 	return (
@@ -23,9 +24,9 @@ export const AppFeatures = () => {
 				</a>
 			</li>
 			<li class="services__item">
-				<a href="#" class="services__link">
+				<Link to="/settings" className="services__link">
 					<img class="services__img" src={settings} alt="Настройки" />
-				</a>
+				</Link>
 			</li>
 		</ul>
 	);

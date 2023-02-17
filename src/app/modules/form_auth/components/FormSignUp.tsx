@@ -1,8 +1,18 @@
 import React from "mine-react";
 import { Button, InputInteractiveHint } from "../../../../lib/components";
+import { Link } from "../../../../lib/core/Router";
 import { validateSignUpForm } from "../../../../lib/core/validation/app/signUpValidation";
+import { signUp } from "../models/signUp";
 
 export const FormSignUp = () => {
+	// const [email, setEmail] = React.useState("");
+	// const [login, setLogin] = React.useState("");
+	// const [firstName, setFirstName] = React.useState("");
+	// const [secondName, setSecondName] = React.useState("");
+	// const [phone, setPhone] = React.useState("");
+	// const [password, setPassword] = React.useState("");
+	// const [againPassword, setAgainPassword] = React.useState("");
+
 	const [emailError, setEmailError] = React.useState("");
 	const [loginError, setLoginError] = React.useState("");
 	const [firstNameError, setFirstNameError] = React.useState("");
@@ -41,8 +51,17 @@ export const FormSignUp = () => {
 				break;
 		}
 	};
+
+	const handleSignUpSubmit = async (e: Event) => {
+		e.preventDefault();
+
+		const form = new FormData(e.target);
+
+		await signUp(form);
+		//todo запрос на сервер
+	};
 	return (
-		<>
+		<form className="auth-container fx-col" onSubmit={handleSignUpSubmit}>
 			<h1 className="auth-header">Регистрация</h1>
 
 			<div className="auth-fields">
@@ -118,12 +137,10 @@ export const FormSignUp = () => {
 					label="Зарегистрироваться"
 				/>
 
-				<Button
-					type="button"
-					className="btn btn-registry"
-					label="Войти"
-				/>
+				<Link to="/" className="btn btn-registry">
+					Войти
+				</Link>
 			</div>
-		</>
+		</form>
 	);
 };

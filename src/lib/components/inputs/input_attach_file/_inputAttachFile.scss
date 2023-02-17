@@ -1,0 +1,51 @@
+.input-attach__wrapper {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.input-attach__input-file {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.input-attach__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		border-color: $color-dark-grey;
+		background-color: $bg-grey;
+	}
+}
+
+.input-attach__icon-wrapper {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+.input-attach__icon {
+}
+
+.input-attach__label {
+	padding-left: 5px;
+	border-left: 1px solid $color-primary;
+	color: $color-primary;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 16px;
+	line-height: 2em;
+	text-decoration: underline;
+}
